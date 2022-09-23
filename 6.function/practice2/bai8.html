@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function changeArr(arr) {
+        let i = 0;
+        let j = arr.length - 1
+        for (i, j; i <= j; i++, j--) {
+            let temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp
+        }
+        return arr
+    }
+
+    function display() {
+        let num = Number(prompt("Enter length: "));
+        let array = new Array(num);
+        for (let i = 0; i < array.length; i++) {
+            array[i] = Number(prompt("Enter length: "));
+        }
+        document.write("Array after reverse: " + changeArr(array));
+    }
+
+    display()
+</script>
+</body>
+</html>

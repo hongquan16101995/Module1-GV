@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkValue(value1, value2, value3) {
+        if (value1 < value2) {
+            if (value1 < value3) {
+                alert("The smallest number is: " + value1)
+            } else if (value3 < value1) {
+                alert("The smallest number is: " + value3)
+            }
+        } else
+            alert("The smallest number is: " + value2)
+    }
+
+    function display() {
+        let num1 = Number(prompt("Enter the first number: "));
+        let num2 = Number(prompt("Enter the second number: "));
+        let num3 = Number(prompt("Enter the third number: "));
+        checkValue(num1, num2, num3);
+    }
+
+    display()
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let point1 = Number(prompt("Enter first point: "))
+    let point2 = Number(prompt("Enter second point: "))
+    let point3 = Number(prompt("Enter third point: "))
+    let avg = (point1 + point2 * 2 + point3 * 7) / 10
+    let notification
+    if (avg >= 8) {
+        notification = ('Học sinh giỏi')
+    } else if (avg >= 6.5) {
+        notification = ('Học sinh khá')
+    } else if (avg >= 5) {
+        notification = ('Học sinh TB')
+    } else {
+        notification = ('Học sinh yếu')
+    }
+    alert(notification)
+</script>
+</body>
+</html>

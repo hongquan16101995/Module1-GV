@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function perimeterCircle(value) {
+        return value * 2 * 3.14;
+    }
+
+    function acreageCircle(value) {
+        return value * value * 3.14;
+    }
+
+    function display() {
+        let value = Number(prompt("Enter the radius circle: "));
+        document.write("Perimeter circle is: " + perimeterCircle(value) + "<br>");
+        document.write("Area circle is: " + acreageCircle(value));
+    }
+
+    display()
+</script>
+</body>
+</html>

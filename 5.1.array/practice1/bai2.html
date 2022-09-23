@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+    let max = arr[0];
+    let index;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i]
+            index = i
+        }
+    }
+    document.write("Biggest number is: " + max + ", have index is: " + index);
+</script>
+</body>
+</html>

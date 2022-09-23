@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function factorialValue(value) {
+        let fac = 1;
+        for (let i = 1; i <= value; i++) {
+            fac *= i
+        }
+        return fac
+    }
+
+    function display() {
+        let value = Number(prompt("Enter the number: "));
+        document.write("Factorial is: " + factorialValue(value));
+    }
+
+    display();
+</script>
+</body>
+</html>

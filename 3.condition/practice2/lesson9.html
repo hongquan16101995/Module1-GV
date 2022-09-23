@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let firstSide = Number(prompt("Enter first side: "));
+    let secondSide = Number(prompt("Enter second side: "));
+    let thirdSide = Number(prompt("Enter third side: "));
+    let boolean1 = (firstSide + secondSide) > thirdSide
+    let boolean2 = (thirdSide + secondSide) > firstSide
+    let boolean3 = (firstSide + thirdSide) > secondSide
+    if (firstSide > 0 && secondSide > 0 && thirdSide > 0 && (boolean1 && boolean2 && boolean3)) {
+        alert("Here are the three sides of the triangle")
+    }
+</script>
+</body>
+</html>

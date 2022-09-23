@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th><label for="amount">Amount</label></th>
+        <th><label for="from">From</label></th>
+        <th><label for="to">To</label></th>
+        <td></td>
+    </tr>
+    <tr>
+        <td><input id="amount" name="amount" oninput="changeMoney()"></td>
+        <td><select id="from" onchange="changeMoney()">
+            <option value="23000">VND</option>
+            <option value="1">Dollar</option>
+        </select></td>
+        <td><select id="to" onchange="changeMoney()">
+            <option value="23000">VND</option>
+            <option value="1">Dollar</option>
+        </select></td>
+        <td>
+            <button type="button" onclick="changeMoney()">Convert</button>
+        </td>
+    </tr>
+</table>
+<p>Result:<span id="convert"></span></p>
+
+<script>
+    function changeMoney() {
+        let amount = Number(document.getElementById("amount").value);
+        let from = Number(document.getElementById("from").value);
+        let to = Number(document.getElementById("to").value);
+        let convert = amount * to / from;
+        document.getElementById("convert").innerHTML = " " + convert;
+    }
+</script>
+</body>
+</html>

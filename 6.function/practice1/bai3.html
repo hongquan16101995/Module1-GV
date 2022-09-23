@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function calculator() {
+        let num1 = Number(prompt("Enter the first number: "));
+        let num2 = Number(prompt("Enter the second number: "));
+        let sum = 0;
+        if (num1 > num2) {
+            alert("The first number great than the second number")
+        } else if (num1 < num2) {
+            sum = num1 + num2
+        }
+        return sum
+    }
+
+    function display() {
+        document.write("Sum is: " + calculator())
+    }
+
+    display()
+</script>
+</body>
+</html>

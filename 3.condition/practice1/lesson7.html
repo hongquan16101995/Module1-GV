@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let powerNum = Number(prompt("Nhập vào số điện: "));
+    let lv1 = 50;
+    let lv2 = 70;
+    let lv3 = 100;
+    if (powerNum > lv3) {
+        document.write('Tiền điện là: ' + (powerNum * 5000) + " VND")
+    } else if (powerNum > lv2) {
+        document.write('Tiền điện là: ' + ((powerNum - lv2) * 4000 + (lv2 - lv1) * 3000 + lv1 * 2000) + " VND")
+    } else if (powerNum > lv1) {
+        document.write('Tiền điện là: ' + ((powerNum - lv1) * 3000 + lv1 * 2000) + " VND")
+    } else {
+        document.write('Tiền điện là: ' + powerNum * 2000 + " VND")
+    }
+</script>
+</body>
+</html>

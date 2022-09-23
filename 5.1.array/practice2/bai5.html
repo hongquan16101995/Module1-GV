@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function inputArr(arr) {
+        let length;
+        do {
+            length = Number(prompt("Enter array 1 length: "));
+        }
+        while (length <= 0);
+
+        for (let i = 0; i < length; i++) {
+            arr[i] = prompt("Enter element " + i + " :")
+        }
+    }
+
+    function inputArr2(arr) {
+        let length;
+        do {
+            length = Number(prompt("Enter array 2 length: "));
+        }
+        while (length <= 0);
+
+        for (let i = 0; i < length; i++) {
+            arr[i] = prompt("Enter element " + i + " :")
+        }
+    }
+
+    function display1(a) {
+        for (let i = 0; i < a.length; i++) {
+            document.write(a[i] + ", ")
+        }
+    }
+
+    function display2(a) {
+        for (let i = 0; i < a.length; i++) {
+            document.write(a[i] + ", ")
+        }
+    }
+
+    let array1 = [];
+    let array2 = [];
+    inputArr(array1);
+    inputArr2(array2);
+    display1(array1);
+    display2(array2);
+    if (array1 === array2) {
+        alert("It's the same!")
+    } else
+        alert("Difference!")
+
+</script>
+</body>
+</html>

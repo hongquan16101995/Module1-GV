@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        tr {
+            width: 300px;
+        }
+    </style>
+
+</head>
+<body>
+<table>
+    <tr>
+        <th><label for="meter">Feet</label></th>
+        <th><label for="feet">Meter</label></th>
+    </tr>
+    <tr>
+        <td><input type="number" id="meter" oninput="cal1()"></td>
+        <td><input type="number" id="feet" oninput="cal2()"></td>
+    </tr>
+    <tr>
+        <td><span id="result1"></span></td>
+        <td><span id="result2"></span></td>
+    </tr>
+</table>
+</body>
+<script src="meter_feet.js"></script>
+</html>

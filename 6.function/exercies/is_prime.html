@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let value = Number(prompt("Enter the number: "));
+
+    function isPrime(value) {
+        if (value < 2)
+            return false;
+        for (let i = 2; i <= Math.sqrt(value); i++) {
+            if (value % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    if (isPrime(value) === true) {
+        alert(value + " is prime")
+    } else
+        alert(value + " isn't prime")
+
+</script>
+</body>
+</html>

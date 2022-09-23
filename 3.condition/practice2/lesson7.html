@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let heSo1 = Number(prompt('Nhập hệ số 1: '));
+    let heSo2 = Number(prompt('Nhập hệ số 2: '));
+    let heSo3 = Number(prompt('Nhập hệ số 3: '));
+    let delta = (Math.pow(heSo2, 2) - (4 * heSo1 * heSo3));
+    let sqrtDelta = Math.sqrt(delta);
+    let x1 = ((-heSo2 + sqrtDelta) / (2 * heSo1));
+    let x2 = ((-heSo2 - sqrtDelta) / (2 * heSo1));
+    if (heSo1 === 0) {
+        if (heSo2 === 0) {
+            if (heSo3 === 0) {
+                document.write("Phương trình có vô số nghiệm")
+            } else
+                document.write("Phương trình vô nghiệm")
+        } else
+            document.write("Phương trình có nghiệm là: " + heSo3)
+    } else if (delta === 0) {
+        document.write("Phuownng trình có 2 ngiệm x1, x2 trùng nhau là: " + (-heSo2 / (2 * heSo1)))
+    } else if (delta > 0) {
+        document.write("Phương trình có 2 nghiệm phân biệt là: " + x1 + " và " + x2)
+    } else {
+        document.write("Phương trình vô nghiệm")
+    }
+</script>
+</body>
+</html>

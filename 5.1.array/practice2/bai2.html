@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function inputArr(arr) {
+        let length;
+        do {
+            length = Number(prompt("Enter array length: "));
+        }
+        while (length <= 0);
+
+        for (let i = 0; i < length; i++) {
+            arr[i] = prompt("Enter element " + i + " :")
+        }
+    }
+
+    function reverseArr(a) {
+        let first = 0;
+        let last = a.length - 1;
+        while (first < last) {
+            let b = a[first];
+            a[first] = a[last];
+            a[last] = b;
+            first++;
+            last--;
+        }
+        return a;
+    }
+
+    let array = [];
+    inputArr(array);
+    document.write("Array after reverse: " + reverseArr(array));
+</script>
+</body>
+</html>

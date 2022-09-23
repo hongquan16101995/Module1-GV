@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+    /*arr.sort(function (a,b) {
+        return a-b
+    })
+    arr.reverse()
+    document.write(arr)*/
+    for (let i = 0, j = arr.length - 1; i <= j; i++, j--) {
+        let temp = arr[i]
+        arr[i] = arr[j]
+        arr[j] = temp
+    }
+    document.write("Reverse array is: " + arr);
+</script>
+</body>
+</html>

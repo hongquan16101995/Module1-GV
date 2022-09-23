@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = Number(prompt("Enter positive number: "));
+    let factorial = 1;
+    for (let i = 1; i <= num && num >= 0;) {
+        factorial *= i;
+        i++;
+    }
+    document.write('Factorial of ' + num + ' is ' + factorial)
+</script>
+</body>
+</html>

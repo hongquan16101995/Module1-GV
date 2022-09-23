@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkValue(value) {
+        if (value > 0 && value % 1 === 0) {
+            alert("True!")
+        } else
+            alert("False!")
+    }
+
+    function display() {
+        let num = Number(prompt("Enter the number: "));
+        checkValue(num);
+    }
+
+    display();
+</script>
+</body>
+</html>

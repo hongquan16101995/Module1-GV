@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function searchConstellationName() {
+        let constellation1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let constellation2 = ["Ursa Minor", "Taurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        let constellationName = prompt("Enter the constellation name: ")
+        let result;
+        for (let i = 0; i < constellation1.length; i++) {
+            result = true;
+            if (constellationName === constellation1[i]) {
+                document.write("Constellation is: " + constellation2[i]);
+                break;
+            }
+            if (constellationName !== constellation1[i]) {
+                result = false;
+            }
+        }
+        if (result === false) {
+            alert("Not found!")
+        }
+    }
+
+    searchConstellationName()
+</script>
+</body>
+</html>

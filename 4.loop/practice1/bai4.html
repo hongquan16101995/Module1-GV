@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numberOne = 0;
+    let numberTwo = 1;
+    let check = true;
+    while (check) {
+        let numberThree = numberOne + numberTwo
+        numberOne = numberTwo
+        numberTwo = numberThree
+        if (numberThree % 5 === 0) {
+            check = false
+            document.write("the first number is divisible by 5 is: " + numberThree)
+            break;
+        }
+    }
+</script>
+</body>
+</html>

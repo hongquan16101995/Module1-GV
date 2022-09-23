@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="CRUD.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body onload="drawTable()">
+<center>
+    <h2 onclick="drawTable()">All Product</h2>
+    <div id="title">
+        <label><input id="add" value=""></label>
+        <button class="btn btn-success" onclick="addName()">Add</button>&emsp;
+        <label><input id="edit" value=""></label>
+        <button class="btn btn-success" onclick="editName()">Edit</button>
+    </div>
+    <div id="product"></div>
+</center>
+<script src="CRUD.js"></script>
+</body>
+</html>

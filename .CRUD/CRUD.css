@@ -1,0 +1,56 @@
+table {
+    width: 600px;
+}
+
+tr, td {
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(224, 217, 217, 0.97);
+}
+
+tr, #title {
+    -webkit-border-radius: 7px;
+}
+
+#title {
+    width: 45%;
+    padding: 20px;
+    background-color: rgba(224, 217, 217, 0.97);
+}
+
+#noCss {
+    background-color: white;
+}
+
+button {
+    width: 70px;
+    text-align: center;
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+}
+
+label {
+    margin-right: 10px;
+}
+
+h2 {
+    vertical-align: center;
+    text-align: center;
+    padding: 10px;
+}
+
+h4 {
+    vertical-align: center;
+}
+
+#products {
+    text-align: right;
+}
+
+
+
